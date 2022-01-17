@@ -1,0 +1,82 @@
+/* pages/detail/detail.wxss */
+
+.goods_image {
+  width: 100%;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  margin:3px;
+  align-items: center;/** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+
+}
+.goods_price{
+  
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+  }
+  .goods_count{
+    float: right;
+  }
+  .goods_name_row{
+      border-top: 5px solid #dedede;
+      border-bottom: 5px solid #dedede;
+      display: flex;
+      padding: 10rpx 0; 
+      }
+
+ .goods_l{
+  flex: 5;
+  color: black;
+  font-size: 30rpx;
+  padding: 0 10rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_collect{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #000;
+}
+.user{
+  display: flex;
+  flex: 1;
+  height: 60px;
+}
+.userinfo-avatar {
+  flex: 1;
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  font-size: 30rpx;
+  margin: 20rpx;
+  flex: 2;
+}
+.empt{
+  display: flex;
+  flex: 4;
+}
+.order {
+  display: flex;
+  flex: 1;
+  align-items: center;/* 垂直居中 */
+  justify-content: center;/* 水平居中 */
+  margin: 20rpx;
+  font-size: 45rpx;
+  background: orange;
+  color: #fff;
+  border-radius: 2px;
+  
+}
