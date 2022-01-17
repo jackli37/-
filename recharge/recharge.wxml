@@ -1,0 +1,3 @@
+<!--pages/recharge/recharge.wxml-->
+<image lazy-load src="{{payimage}}"></image>
+

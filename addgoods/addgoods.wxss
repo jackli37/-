@@ -1,0 +1,65 @@
+/* pages/addgoods/addgoods.wxss */
+/**index.wxss**/
+/**输入框**/
+.refresh{
+  background-color: rgb(235, 177, 51);
+  float: left;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.top {
+  margin-top: -30px;
+}
+
+.sectionName{
+  margin-top: 20px;
+}
+
+.refresh-active {
+  background-color:red;
+}
+
+
+.submit-active{
+  background-color: rgb(1, 197, 20)
+}
+
+.inputMeth{
+  border: 1px solid #c0c0c0;
+}
+
+.textMeth{
+  float: left;
+  color: rgb(127, 127, 127);
+  font-weight: bolder;
+  margin-right: 10px;
+}
+.textimageMeth{
+  float: left;
+  color: rgb(127, 127, 127);
+  font-weight: bolder;
+  margin-right: 200rpx;
+}
+/**选择器**/
+page{background-color: #efeff4;}
+.tui-picker-content{
+  padding: 30rpx;
+  text-align: center;
+}
+.tui-picker-name{
+  float: left;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.tui-picker-detail{
+  height: 48rpx;
+  line-height: 30rpx;
+  border: 1px solid #c0c0c0;
+  background-color: #efeff4;
+  font-size: 30rpx;
+  /**padding: 0 10px;**/
+  overflow: hidden;
+  font-weight: bolder;
+  margin-right: 10px;
+}

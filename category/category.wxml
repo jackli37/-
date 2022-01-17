@@ -1,0 +1,26 @@
+<!--pages/category/category.wxml-->
+
+<view class="cates">
+<!--搜索框开始-->
+  <SearchInput></SearchInput>
+  <!--搜索框结束-->
+  </view>
+<!--菜单-->
+
+<view class="goods_group">
+  <navigator wx:for="{{colleges}}"
+wx:for-index="index"
+wx:for-item="item1" 
+hover-class='hcls'
+class="goodslist" 
+url="/pages/cates/cates?name={{item1.name}}"
+>
+<image class="goods_image" mode="aspectFill" lazy-load src="{{item1.image}}"></image>
+<view class="goods_name">{{item1.name}}</view>
+
+</navigator>
+
+
+</view>
+
+  

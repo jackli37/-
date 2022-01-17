@@ -1,0 +1,37 @@
+/* pages/mine/mine.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  color: #aaa;
+}
+.userinfo-avatar {
+  flex: 1;
+  
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  font-size: 30rpx;
+  flex: 2;
+}
+.mygoods {
+  font-size: 50rpx;
+}
+.myorders {
+  font-size: 50rpx;
+}
+.myaccount{
+  font-size: 50rpx;
+}
+
+
+button{
+  background: #0094ff;
+  width: 60%;
+  margin-top: 100rpx;
+  color: #ffffff;
+}

@@ -1,0 +1,29 @@
+<!--pages/mygoods/mygoods.wxml-->
+<navigator url="/pages/addgoods/addgoods">
+<view class="goods-add" >
+添加商品
+</view>
+</navigator>
+
+<block wx:for='{{ goods }}' wx:key='_id'>
+  <navigator hover-class='hcls' class='goods' url="/pages/detail/detail?id={{item._id}}&addcount=0">
+    <view class="goods-l">
+      <image mode="aspectFill" lazy-load src="{{ item.imageSrc }}"></image>
+    </view>
+    <view class="goods-r">
+      <view class="goods-r-t">
+        <view>{{ item.title }}</view>
+        <view class="price">¥ {{ item.price }}</view>
+      </view>
+      <view class="goods-r-m">访问量: {{ item.count }}</view>
+      <view class="goods-r-b">
+        <view>
+          <text>{{item.type}}</text>
+        <text>{{item.degree}}</text>
+        </view>
+        <view catchtap="deletegoods" data-id="{{item._id}}" class="order">下架</view>
+      </view>
+    </view>
+  </navigator>
+</block>
+
